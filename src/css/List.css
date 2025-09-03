@@ -1,0 +1,76 @@
+.list-h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.list-p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.list-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  margin: 4rem auto;
+  max-width: 800px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.list-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+}
+
+.list-ol {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.list-li1 {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #00bcd4;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.list-li1:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.list-li1 strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.list-li2 {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 4px solid #d4004a;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.list-li2:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.list-li2 strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
