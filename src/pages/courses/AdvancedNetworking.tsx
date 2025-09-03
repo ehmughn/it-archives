@@ -3,7 +3,6 @@ import "../../css/Course.css";
 import Title from "../../components/Title";
 import Definition from "../../components/topic-contents/Definition";
 import List from "../../components/topic-contents/List";
-import FormulaBox from "../../components/topic-contents/FormulaBox";
 
 import type { Content } from "../../components/topic-contents/List";
 import LessonNumber from "../../components/buttons/LessonNumber";
