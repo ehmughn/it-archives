@@ -13,6 +13,13 @@ function Home() {
       >
         Project Management
       </button>
+      <button
+        onClick={() => {
+          navigate("/course/CTADNETL");
+        }}
+      >
+        Advanced Networking
+      </button>
     </>
   );
 }
