@@ -1,4 +1,5 @@
-import "../../css/ProjectManagement.css";
+import "../../css/Course.css";
+
 import Title from "../../components/Title";
 import Definition from "../../components/topic-contents/Definition";
 import List from "../../components/topic-contents/List";
@@ -9,7 +10,7 @@ import LessonNumber from "../../components/buttons/LessonNumber";
 import { useState } from "react";
 
 function ProjectManagement() {
-  const [lessonNumber, setLessonNumber] = useState("");
+  const [lessonNumber, setLessonNumber] = useState("All");
 
   const lessonNumberButtonsClicked = (data: string) => {
     setLessonNumber(data);
@@ -70,6 +71,7 @@ function ProjectManagement() {
 
     return (
       <>
+        <h1 className="lesson-title">Lesson 1: Project</h1>
         <Definition
           title="Project"
           meaning="is a temporary endeavor undertaken to create a unique product, service, or result."
@@ -81,7 +83,6 @@ function ProjectManagement() {
       </>
     );
   };
-
   const renderLesson2 = () => {
     const constraints: Content[] = [
       {
@@ -145,6 +146,7 @@ function ProjectManagement() {
 
     return (
       <>
+        <h1 className="lesson-title">Lesson 2: Project Management</h1>
         <Definition
           title="Project Management"
           meaning="is the use of specific knowledge, skills, tools, and techniques to deliver something of value to people."
@@ -282,6 +284,7 @@ function ProjectManagement() {
 
     return (
       <>
+        <h1 className="lesson-title">Lesson 3: Project Planning</h1>
         <Definition
           title="Project Planning"
           meaning="is the process of defining the scope, objectives, tasks, resources, timeline, and budget for a specific project. It serves as a roadmap that guides the team through each stage."
@@ -392,6 +395,7 @@ function ProjectManagement() {
 
     return (
       <>
+        <h1 className="lesson-title">Lesson 4: Project Management - Time</h1>
         <Definition
           title="Time Management"
           meaning="The process of planning and controlling the schedule to ensure timely completion of a project."
@@ -438,7 +442,7 @@ function ProjectManagement() {
       </>
     );
   };
-  function renderLesson5() {
+  const renderLesson5 = () => {
     const keyComponentsOfEVM: Content[] = [
       {
         title: "Planned Value (PV)",
@@ -461,6 +465,7 @@ function ProjectManagement() {
     ];
     return (
       <>
+        <h1 className="lesson-title">Lesson 5: Project Management - Cost</h1>
         <Definition
           title="Cost Management"
           meaning="the process of planning, scheduling, monitoring, and controlling the time allocated to complete project activities. Eman's note: base lang to sa ppt, same lang siya sa definition ng 'Time Management'."
@@ -555,7 +560,7 @@ function ProjectManagement() {
         />
       </>
     );
-  }
+  };
 
   const renderContent = () => {
     switch (lessonNumber) {
@@ -583,7 +588,7 @@ function ProjectManagement() {
   };
 
   return (
-    <div className="project-container">
+    <div className="container">
       <Title text="Project Management" />
       <div className="lesson-buttons">
         {["All", "1", "2", "3", "4", "5"].map((num) => (
@@ -594,10 +599,11 @@ function ProjectManagement() {
           />
         ))}
       </div>
-      <p className="lesson-indicator">
+      <h1 className="lesson-indicator">
         {lessonNumber && `Lesson ${lessonNumber}`}
-      </p>
+      </h1>
       {renderContent()}
+      <p className="ending-message">You have reached the end of the page.</p>
     </div>
   );
 }

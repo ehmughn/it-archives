@@ -5,7 +5,7 @@ function Home() {
   const navigate = useNavigate();
   return (
     <>
-      Home{" "}
+      <h1>This is Home</h1>
       <button
         onClick={() => {
           navigate("/course/CTPRJMGT");
