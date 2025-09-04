@@ -20,6 +20,13 @@ function Home() {
       >
         Advanced Networking
       </button>
+      <button
+        onClick={() => {
+          navigate("/course/CTINPRGL");
+        }}
+      >
+        Integrative Programming
+      </button>
     </>
   );
 }
