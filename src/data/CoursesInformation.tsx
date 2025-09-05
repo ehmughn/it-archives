@@ -2397,6 +2397,1047 @@ const CoursesList: CourseInformation[] = [
       //Next lesson here
     ],
   },
+  {
+    name: "Multimedia Systems",
+    code: "CTMLSYSL",
+    lessons: [
+      {
+        title: "Principles of Design",
+        content: [
+          {
+            title: "What is Multimedia",
+            content:
+              "Multimedia is a system of relaying information or entertainment that includes many different forms of communication. Multimedia might include video, audio clips, still photographs and a lot more.",
+            type: "Definition",
+          },
+          {
+            title: "4 Categories of Media",
+            content: [
+              {
+                title: "Print Media",
+                content:
+                  "refers to printed materials, such as books and magazines, that contain words and images.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Broadcast Media",
+                content:
+                  "includes information transmitted through one of several mass communication channels, such as television and radio.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Internet Media",
+                content:
+                  "is content distributed online and can include emails and online publications.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Out-of-home media, or OOH",
+                content:
+                  "is media that reaches people when they are outside of their homes, like billboards.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Principles of Design",
+            content:
+              "Building blocks of visual artist to make a successful composition.",
+            type: "Definition",
+          },
+          {
+            title: "Principles of Design",
+            content: [
+              {
+                title: "EMPHASIS",
+                content:
+                  "the focal point of a design and the order of importance of each element within a design.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "BALANCE & ALIGNMENT",
+                content:
+                  "Every design composition has its particular weight. Color, size, and texture are all factors that account for weight. You can't stuff all your heavy elements into a specific area of your design.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "CONTRAST",
+                content:
+                  'When someone says a design "pops," they refer to contrast. The contrast principle of design generates space and distinction between elements. To operate effectively together and be viewable, your backdrop should be different from the color of your details.',
+                type: "InLineDefinition",
+              },
+              {
+                title: "REPETITION",
+                content:
+                  "a principle of design that is vital for more than just one printed product. Beautiful graphic patterns are a big part of today's packaging design.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "PROPORTION",
+                content:
+                  "The visual size and weight of parts in composition and their correlation are referred to as proportion. It's generally more effective to approach your design part by part rather than a full thing.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "MOVEMENT",
+                content:
+                  "controlling the elements in a composition so that the eye is led to move from one to the next and the information is properly communicated to your audience. Movement creates the story or the narrative of your work.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "NEGATIVE SPACE",
+                content:
+                  "The only one that expressly deals with what you don't contribute is white space (or negative space). The empty space around the parts in your composition is known as white space. White space isn't just empty; it helps organize and create hierarchy. White space around an element has always been related to aesthetics in viewers. It informs our eyes that objects in one area are separated from objects in other areas.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+        ],
+      },
+      {
+        title: "Introduction to Multimedia",
+        content: [
+          {
+            title: "Multimedia",
+            content:
+              "any combination of graphics, text, drawings, videos, animation, and audio",
+            type: "Definition",
+          },
+          {
+            title: "Advantages of Multimedia",
+            content: [
+              {
+                title: "Creativity",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Variety",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Cost - effective",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Realistic approach",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Wide variety of support",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Trendy",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Disadvantages of Multimedia",
+            content: [
+              {
+                title: "Information overload",
+                content: "",
+                type: "",
+              },
+              {
+                title: "It takes time to compile",
+                content: "",
+                type: "",
+              },
+              {
+                title: "It can be expensive",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Too much makes it unpractical",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Characteristics of Multimedia System",
+            content: [
+              {
+                title: "Multimedia systems must be computer controlled.",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Multimedia systems are integrated.",
+                content: "",
+                type: "",
+              },
+              {
+                title:
+                  "The information they handle must be represented digitally.",
+                content: "",
+                type: "",
+              },
+              {
+                title:
+                  "Interface to the final presentation of media is usually interactive.",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Basic Elements of Multimedia",
+            content: [
+              {
+                title: "Text",
+                content:
+                  "characters that are used to create words, sentences, and paragraphs.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Graphics",
+                content:
+                  "A digital representation of non-text information, such as a drawing, chart, or photograph.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Animation",
+                content:
+                  "Flipping through a series of still images. It is a series of graphics that create an illusion of motion.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Video",
+                content:
+                  "Photographic images that are played back at speeds of 15 to 30 frames a second and provides the appearance of full motion.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Audio",
+                content: "Music, Speech, or any other sound.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Two Types of Multimedia Presentation",
+            content: [
+              {
+                title: "Linear Presentation",
+                content:
+                  "progresses often without any navigational control for the viewer such as a cinema presentation.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Non-linear Interactive",
+                content:
+                  "uses interactivity to control progress as with a video game or self-paced computer based training. Hypermedia is an example of non-linear content.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Hypertext",
+            content:
+              "It contains other text documents as elements which are interconnected and accessible through Hyperlinks.",
+            type: "Definition",
+          },
+          {
+            title: "Hypermedia",
+            content:
+              "It contains text, audio, video and graphics as elements which are linked and accessible through Hyperlinks.",
+            type: "Definition",
+          },
+        ],
+      },
+      {
+        title: "Digital Texts",
+        content: [
+          {
+            title: "Digital Text",
+            content: [
+              {
+                title: "A. Unformatted Text",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "B. Formatted",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              { title: "ccc", content: "dontMatter", type: "dontMatter" },
+            ],
+            type: "List",
+          },
+          {
+            title: "Font",
+            content:
+              "Arial, 20 pt. Arial, 12 pt., Italic Impact, 24 pt., Bold Impact, 12 pt.",
+            type: "Definition",
+          },
+          {
+            title: "Typeface",
+            content: "Times New Roman Helvetica Courier",
+            type: "Definition",
+          },
+          {
+            title: "Typefaces",
+            content:
+              "SCRIPT Boldface Italic Underline POINT Used for measuring font size.",
+            type: "Definition",
+          },
+          {
+            title: "Font",
+            content:
+              "set of characters of a particular typeface, style and size.",
+            type: "Definition",
+          },
+          {
+            title: "Monospaced Fonts",
+            content: "Courier is a monospaced font.",
+            type: "Definition",
+          },
+          {
+            title: "Proportional Fonts",
+            content: "Palatino is a proportional font.",
+            type: "Definition",
+          },
+          {
+            title: "Case",
+            content:
+              "Lowercase this is all in lowercase. Uppercase THIS IS ALL IN UPPERCASE.",
+            type: "Definition",
+          },
+          {
+            title: "Weight",
+            content:
+              "Lighter Weight This is in Lighter Weight. Heavier Weight This is in Heavier Weight.",
+            type: "Definition",
+          },
+          {
+            title: "Kerning",
+            content: "Process of adjusting the spacing between letters",
+            type: "Definition",
+          },
+          {
+            title: "Tracking",
+            content: "Spacing in between all of the characters.",
+            type: "Definition",
+          },
+          {
+            title: "Condensed Text",
+            content: "Refers to NARROWING the width of the characters.",
+            type: "Definition",
+          },
+          {
+            title: "Extended Text",
+            content: "Refers to WIDENING the width of the characters.",
+            type: "Definition",
+          },
+          {
+            title: "Leading",
+            content: "Spacing in between the lines of the text.",
+            type: "Definition",
+          },
+          {
+            title: "Alignment & Justification",
+            content: "Left Aligned Right Aligned Center Aligned Justified",
+            type: "Definition",
+          },
+          {
+            title: "Categories of Typefaces",
+            content: [
+              {
+                title: "Serif",
+                content: "W",
+                type: "",
+              },
+              {
+                title: "Sans Serif",
+                content: "W",
+                type: "",
+              },
+              {
+                title: "Script Typeface",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Symbol Typeface",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "HTML",
+            content:
+              "HYPERTEXT MARK-UP LANGUAGE Are electronic documents displayed in the World Wide Web Tim Berners – Lee (1990) Has hyperlinks HTML + CSS",
+            type: "Definition",
+          },
+          {
+            title: "Guidelines for the Use of Text",
+            content: [
+              {
+                title: "Be Selective",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Be Brief",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Make texts readable",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Be consistent",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Guidelines for the Use of Text",
+            content: [
+              {
+                title: "Be careful",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Be respectful",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Combine text w/ other media",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Make text interactive",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+        ],
+      },
+      {
+        title: "Acquiring Images Using Digital Still Camera",
+        content: [
+          {
+            title: "Camera",
+            content:
+              "It is a light-proof device that has a lens through which light enters to form an image on sensitive media, such as film or an electronic image sensor.",
+            type: "Definition",
+          },
+          {
+            title: "Common Types of Camera",
+            content: [
+              {
+                title: "Analog Camera",
+                content:
+                  "These type of camera capture images on film, using a chemical process to record light.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Digital Camera",
+                content:
+                  "This type of camera capture images electronically using sensors and store them digitally.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Analog Cameras",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Dark Room",
+            content:
+              "Darkroom photography is a traditional process for developing photographic prints, involving several steps in a light-safe environment. It begins with setting up the darkroom, preparing chemicals, and exposing light-sensitive paper through a negative using an enlarger. The exposed paper is then developed, stopped, fixed, washed, and dried.",
+            type: "Definition",
+          },
+          {
+            title: "Types of Digital Camera",
+            content: [
+              {
+                title: "Digital Single-Lens Reflex (DSLR)",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Compact Digital Camera",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Camera Phones",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Digital Single-Lens Reflex (DSLR)",
+            content:
+              "It allows photographers to manually control many of the elements that affect the outcome of an image. is a digital camera that uses mirrors to direct light from the lens to the viewfinder, which is a hole on the back of the camera that you look through to see what you are taking a picture of.",
+            type: "Definition",
+          },
+          {
+            title: "Digital Single-Lens Reflex (DSLR)",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Compact Digital Camera",
+            content:
+              "It is a point-and-shoot camera designed primarily for simple operation. It uses autofocus, automatic systems for setting the exposure options, and have flash units built in",
+            type: "Definition",
+          },
+          {
+            title: "Compact Digital Camera",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Camera Phones",
+            content: "It is a cellular phone incorporating a digital camera.",
+            type: "Definition",
+          },
+          {
+            title: "Basics of Digital Photography",
+            content:
+              "The ability of your camera to properly capture an image largely depends on the amount of light that it sees or the amount of time it will be allowed to see, to produce a correct exposure.",
+            type: "Definition",
+          },
+          {
+            title: "Basics of Digital Photography",
+            content:
+              "Elements that affect exposure: 1. Shutter Speed - it is the amount of time light allowed to let in. 2. Aperture - it is the measurement of a camera’s opening. 3. ISO - it refers to the rating of how sensitive your camera sensor is to light.",
+            type: "Definition",
+          },
+          {
+            title: "Shutter Speed",
+            content:
+              "It is the amount of time that the shutter is open. The longer the shutter is open, the more light gets through and this can give your picture a different effect (Motion Blur) Too much light will make your picture look washed out and too little light will make your picture too dark.",
+            type: "Definition",
+          },
+          {
+            title: "Motion Blur",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Over Exposed Image",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Aperture",
+            content:
+              "Also called f-stop, it determines how wide the opening of the lens is when the picture is taken. It controls how much light can enter the camera.",
+            type: "Definition",
+          },
+          {
+            title: "Aperture",
+            content:
+              "It is measured in f-stops. Ex. of f-stops are f/2.8. f/4. f/5.6, f/8, f/11, and f/16. f-stop numbers are the reverse of the aperture size. Hence, as f-stop number increases, the aperture size decreases.",
+            type: "Definition",
+          },
+          {
+            title: "Aperture",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Depth of Field (DOF)",
+            content:
+              "is the degree or level of focus in you image for different subjects at varying distances from the camera. Large DOF means most of the subjects in your image will be on focus. Small DOF means that only a portion of your image will be sharp and the rest will be out of focus.",
+            type: "Definition",
+          },
+          {
+            title: "ISO",
+            content:
+              "Another factor that affects exposure is the sensitivity of your sensor to light. more sensitive sensor noise / grainy image sharper and more detailed image HIGHER ISO = = LOWER ISO",
+            type: "Definition",
+          },
+          {
+            title: "ISO",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "DIGITAL CAMERA MODES",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Landscape / Scenery",
+            content:
+              "For taking pictures of landscapes and other sceneries. Camera focuses at infinity and uses large DOF.",
+            type: "Definition",
+          },
+          {
+            title: "Portrait",
+            content:
+              "It is used or photographing people. It uses a large aperture to make subject clearer and the background softer.",
+            type: "Definition",
+          },
+          {
+            title: "Night Landscape",
+            content:
+              "Uses slower shutter speed for shooting low light scenes; but may cause image to blur.",
+            type: "Definition",
+          },
+          {
+            title: "ISO / High Sensitivity",
+            content:
+              "Use this if you need to shoot in low light conditions without a flash. Increased ISO causes noise to image.",
+            type: "Definition",
+          },
+          {
+            title: "Macro/ Close-up",
+            content:
+              "Use this to photograph small objects, such as flowers, drops, or insects. Uses small f-stop (large aperture).",
+            type: "Definition",
+          },
+          {
+            title: "Sports/ Action",
+            content:
+              "Allows you to shoot moving objects. It uses faster shutter speed to “freeze” moving objects.",
+            type: "Definition",
+          },
+          {
+            title: "Sunset",
+            content:
+              "Makes color during sunsets more vivid – brilliant oranges and red.",
+            type: "Definition",
+          },
+          {
+            title: "Tips for Beginners",
+            content:
+              "1. Get close. Keep camera steady and shoot many frames as possible. 2. Create Blur on purpose. 3. Use natural light. 4. Never use zoom. 5. Do not over process you photos.",
+            type: "Definition",
+          },
+          {
+            title: "THANKYou",
+            content: "",
+            type: "Definition",
+          },
+        ],
+      },
+      {
+        title: "Rule of Thirds and Viewpoints",
+        content: [
+          {
+            title: "Photography Composition Basics",
+            content: "Rule of Thirds",
+            type: "Definition",
+          },
+          {
+            title: "Rule of Thirds",
+            content:
+              "Good Photographers place the subject not in the center of the photograph, but in one of the intersecting points of the nine-square grid.",
+            type: "Definition",
+          },
+          {
+            title: "Rule of Thirds",
+            content:
+              "The rule is to position the most important elements in your scene along these lines, or at the points where they intersect of thirds says that you should.",
+            type: "Definition",
+          },
+          {
+            title: "Rule of Thirds",
+            content:
+              "Implementing rules of thirds will balance and add interests to your photo.",
+            type: "Definition",
+          },
+          {
+            title: "Rule of Thirds",
+            content:
+              "When photographing moving subjects, position them as normal, but also pay attention to the direction they're moving. Leave more space in front of them to show where they're going.",
+            type: "Definition",
+          },
+          {
+            title: "Rule of Thirds",
+            content:
+              "For landscape shots, place the horizon in one of the horizontal lines and try to include an interesting object for the focal point in the scene.",
+            type: "Definition",
+          },
+          {
+            title: "Rule of Thirds",
+            content:
+              "Position people off to one side of the frame. It stops the photo from looking like a mugshot. Place the persons eye to one of the intersections.",
+            type: "Definition",
+          },
+          {
+            title: "Rule of Thirds",
+            content:
+              "Select the most important element in the photo, and try to position them at or near the lines and intersections of the grid. It doesn’t to be perfectly lined up as long as they're close.",
+            type: "Definition",
+          },
+          {
+            title: "Rule of Thirds",
+            content:
+              "Cropping photos to apply Rule of Thirds: this allows you to reposition the important subjects in your image, moving them into more pleasing positions.",
+            type: "Definition",
+          },
+          {
+            title: "Leading Lines",
+            content:
+              "Use line to focus the viewers eye on the main subject. Lines can be straight, diagonal, curvy, zigzag, radial etc. and each can be used to enhance our photo's composition.",
+            type: "Definition",
+          },
+          {
+            title: "Leading Lines",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Leading Lines",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Symmetry & Patterns",
+            content:
+              "Patterns are both natural and man-made. Another great way to use them is to break the symmetry or pattern in some way, introducing tension and a focal point to the scene.",
+            type: "Definition",
+          },
+          {
+            title: "Symmetry & Patterns",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Symmetry & Patterns",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Symmetry & Patterns",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Symmetry & Patterns",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Depth of Field",
+            content:
+              "You can create depth in a photo by including objects in the foreground, middle ground and background.",
+            type: "Definition",
+          },
+          {
+            title: "Depth of Field",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Depth of Field",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Depth of Field",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Framing",
+            content:
+              "Place natural objects such as trees, archways and holes around the edge of the composition to isolate the main subject from the outside world. The result is a more focused image, which draws your eye naturally to the main point of interest.",
+            type: "Definition",
+          },
+          {
+            title: "Framing",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "View Points Bird’s Eye View",
+            content: "The viewer is looking down on the subject.",
+            type: "Definition",
+          },
+          {
+            title: "Bird’s Eye View",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Bird’s Eye View",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "View Points Worm’s Eye View",
+            content: "The viewer is looking up at the subject.",
+            type: "Definition",
+          },
+          {
+            title: "Worm’s Eye View",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Tips for Beginners",
+            content:
+              "1. Get close. Keep camera steady and shoot many frames as possible. 2. Create Blur on purpose. 3. Use natural light. 4. Never use zoom. 5. Do not over process you photos.",
+            type: "Definition",
+          },
+        ],
+      },
+      {
+        title: "Digital Images",
+        content: [
+          {
+            title: "Objectives",
+            content:
+              "Identify and differentiate between common digital image file formats (e.g., JPEG, PNG, GIF), including their uses, advantages, and limitations. Learn the principles of image compression, both lossless and lossy, and their impact on image quality and file size. Gain proficiency in altering and optimizing image properties such as resolution, color depth, and transparency to suit various digital applications.",
+            type: "Definition",
+          },
+          {
+            title: "Digital Images",
+            content:
+              "are electronic snapshots taken of a scene or scanned from documents, such as photographs, manuscripts, printed texts, and artwork. The digital image is sampled and mapped as a grid of dots or picture elements (pixels). Each pixel is assigned a tonal value (black, white, shades of gray or color), which is represented in binary code (zeros and ones). The binary digits (bits) for each pixel are stored in a sequence by a computer and often reduced to a mathematical representation (compressed). The bits are then interpreted and read by the computer to produce an analog version for display or printing",
+            type: "Definition",
+          },
+          {
+            title: "Digital Image File Formats",
+            content: "",
+            type: "Definition",
+          },
+          {
+            title: "Still Images are generated in two ways",
+            content: [
+              {
+                title: "Bitmap (raster images)",
+                content:
+                  "are composed of pixels. are used for photo-realistic images and for complex drawings requiring fine detail. is a simple matrix of the tiny dots that form an image and are displayed on a computer screen or printed. Pixel art generally uses under 256 colors, while modern screens can display up to 4.2 billion distinct colors. .GIF, .BMP, .JPEG, .JPG, and .PCX.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Vector-drawn",
+                content:
+                  "are used for lines, boxes, circles, polygons, and other graphic shapes that can be mathematically expressed in angles, coordinates, and distances. Vector graphics can be scaled without losing the image quality. Vector art saves the image as lines with coordinates of their starting and ending points. Consists of lines, points, polygons, and curves. Adobe Illustrator and CorelDraw ends in .AI and .EPS",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Note",
+            content:
+              "The appearance of both types of images depends on the display resolution and capabilities of your computer’s graphics hardware and monitor.",
+            type: "Definition",
+          },
+          {
+            title: "Image Types",
+            content: [
+              {
+                title: "JPEG (Joint Photographic Experts Group)",
+                content:
+                  "Is the most popular among the image formats used on the web. JPEG discards most of the information to keep the image file size small; which means some degree of quality is also lost. The colors are paler and the lines are less defined and the picture is noisier.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "GIF (Graphics Interchange Format)",
+                content:
+                  "is limited to the 8-bit palette with only 256 colors. GIF compresses images in two ways: first, by reducing the number of colors in rich color images, thus reducing the number of bits per pixel. Second, GIF replaces multiple occurring patterns into one.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "BMP (Windows Bitmap)",
+                content:
+                  "The Windows Bitmap or BMP files are image files within the Microsoft Windows operating system. These files are large and uncompressed, but the images are rich in color, high in quality, simple and compatible in all Windows OS and programs. BMP files are also called raster or paint images. BMP files are made of millions and millions of dots called ‘pixels’, with different colors and arrangements to come up with an image or pattern. It might be an 8-bit, 16-bit or 24-bit image.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "TIFF (Tagged Image File Format)",
+                content:
+                  "The TIFF image format is easy to use with software that deals with page layout, publishing and photo manipulation via fax, scanning, word processing, etc. It is capable of recording halftone image data with different pixel intensities, thus is the perfect format for graphic storage, processing and printing.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "PNG (Portable Network Graphics)",
+                content:
+                  "It is an image format specifically designed for the web. PNG is saved with 256 colors maximum but it saves the color information more efficiently. It also supports an 8 bit transparency. PNG can support 24 bit RGB color images, grayscale images, both with and without alpha channels. RGB cannot support CMYK color spaces, and is not designed for print graphics.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "JPEG Pros",
+            content:
+              "24-bit color, with up to 16 million colors Rich colors, great for photographs that needs fine attention to color detail Most used and most widely accepted image format Best for web graphics Compatible in most OS (Mac, PC, Linux)",
+            type: "Definition",
+          },
+          {
+            title: "JPEG Cons",
+            content:
+              "They tend to discard a lot of data Cannot be animated Does not support transparency",
+            type: "Definition",
+          },
+          {
+            title: "GIF Pros",
+            content:
+              "Can support transparency Can do small animation effects They contain the same amount of quality as the original, except of course it now only has 256 colors Great for images with limited colors, or with flat regions of color Best for web graphics",
+            type: "Definition",
+          },
+          {
+            title: "GIF Cons",
+            content: "Only supports 256 colors",
+            type: "Definition",
+          },
+          {
+            title: "BMP Pros",
+            content:
+              "Works well with most Windows programs and OS, you can use it as a Windows wallpaper",
+            type: "Definition",
+          },
+          {
+            title: "BMP Cons",
+            content:
+              "Does not scale or compress well Very huge image files making it not web friendly No real advantage over other image formats",
+            type: "Definition",
+          },
+          {
+            title: "TIFF Pros",
+            content:
+              "Very flexible format, it supports several types of compression like JPEG, LZW, ZIP or no compression at all. High quality image format, all color and data information are stored TIFF format can now be saved with layers Best for Print format",
+            type: "Definition",
+          },
+          {
+            title: "TIFF Cons",
+            content:
+              "Very large file size–long transfer time, huge disk space consumption, and slow loading time.",
+            type: "Definition",
+          },
+          {
+            title: "PNG Pros",
+            content:
+              "It does not lose quality and detail after image compression Supports transparency better than GIF Best for web graphics",
+            type: "Definition",
+          },
+          {
+            title: "PNG Cons",
+            content:
+              "Not good for large images because they tend to generate a very large file, sometimes creating larger files than JPEG. It cannot be animated. Not all web browsers can support PNG.",
+            type: "Definition",
+          },
+          {
+            title: "Basic Color Modes",
+            content:
+              "The Color Mode or image mode determines how colors combine based on the number of channels in a color model. Different color modes result in different levels of color detail and file size.",
+            type: "Definition",
+          },
+          {
+            title: "Basic Color Modes",
+            content: [
+              {
+                title: "RGB mode (millions of colors)",
+                content:
+                  "Red – Green – Blue is the color emitted from your computer monitor, gadgets and televisions.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "CMYK mode (four-printed colors)",
+                content:
+                  "Cyan – Magenta – Yellow – Black The color mode used when making an image print.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Index mode (256 colors)",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Grayscale mode (256 grays)",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Bitmap mode (2 colors)",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Photo Editing Software",
+            content:
+              "a tool for modifying, generating, combining and optimizing digital photos and images in the computer.",
+            type: "Definition",
+          },
+          {
+            title: "Examples of Photo Editing Software",
+            content: [
+              {
+                title: "CorelDraw",
+                content: "",
+                type: "",
+              },
+              {
+                title: "PhotoScape",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Nik Collection",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Paint.net",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Adobe Lightroom",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Gimp",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+        ],
+      },
+    ],
+  },
   //Next Course Here
 ];
 

@@ -130,19 +130,12 @@ function Courses({ page, toHome }: Props) {
       lessonNumber === "All"
         ? course.lessons
         : [course.lessons[parseInt(lessonNumber) - 1]];
-    const allContent = relevantLessons.flatMap((lesson) =>
-      lesson.content.map((content) => content)
-    );
-    const filteredContent = allContent
-      .map((content) => renderContentItem(content))
-      .filter((item) => item !== null);
-
-    if (filteredContent.length === 0 && searchTerm) {
-      return (
-        <p className="error-message">No content found for "{searchTerm}".</p>
-      );
-    }
-    return filteredContent;
+    return relevantLessons.map((lesson, index) => (
+      <div key={index} className="lesson-section">
+        <h2 className="lesson-title">{lesson.title}</h2>
+        {lesson.content.map((content) => renderContentItem(content))}
+      </div>
+    ));
   }, [course, lessonNumber, searchTerm]);
 
   if (isLoading) {
