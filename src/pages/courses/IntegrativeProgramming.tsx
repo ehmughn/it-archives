@@ -1,6 +1,6 @@
 import "../../css/Course.css";
 
-import Title from "../../components/Title";
+import CourseStart from "../../components/CourseStart";
 import Definition from "../../components/topic-contents/Definition";
 import List from "../../components/topic-contents/List";
 
@@ -327,7 +327,7 @@ function IntegrativeProgramming() {
 
   return (
     <div className="container">
-      <Title text="Integrative Programming and Technologies" />
+      <CourseStart title="Integrative Programming and Technologies" />
       <div className="lesson-buttons">
         {["All", "1", "2"].map((num) => (
           <LessonNumber

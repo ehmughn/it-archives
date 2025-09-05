@@ -1,6 +1,6 @@
 import "../../css/Course.css";
 
-import Title from "../../components/Title";
+import CourseStart from "../../components/CourseStart";
 import Definition from "../../components/topic-contents/Definition";
 import List from "../../components/topic-contents/List";
 
@@ -238,7 +238,6 @@ function AdvancedNetworking() {
       </>
     );
   };
-
   const renderContent = () => {
     switch (lessonNumber) {
       case "All":
@@ -257,7 +256,7 @@ function AdvancedNetworking() {
 
   return (
     <div className="container">
-      <Title text="Advanced Networking" />
+      <CourseStart title="Advanced Networking" />
       <div className="lesson-buttons">
         {["All", "1", "2"].map((num) => (
           <LessonNumber

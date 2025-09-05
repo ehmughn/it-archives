@@ -1,6 +1,6 @@
 import "../../css/Course.css";
 
-import Title from "../../components/Title";
+import CourseStart from "../../components/CourseStart";
 import Definition from "../../components/topic-contents/Definition";
 import List from "../../components/topic-contents/List";
 import FormulaBox from "../../components/topic-contents/FormulaBox";
@@ -14,7 +14,6 @@ function ProjectManagement() {
 
   const lessonNumberButtonsClicked = (data: string) => {
     setLessonNumber(data);
-    console.log(data);
   };
 
   const renderLesson1 = () => {
@@ -589,7 +588,7 @@ function ProjectManagement() {
 
   return (
     <div className="container">
-      <Title text="Project Management" />
+      <CourseStart title="Project Management" />
       <div className="lesson-buttons">
         {["All", "1", "2", "3", "4", "5"].map((num) => (
           <LessonNumber
