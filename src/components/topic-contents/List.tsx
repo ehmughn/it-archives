@@ -14,7 +14,7 @@ export interface Content {
 
 function List(props: Props) {
   const renderContent = (item: Content) => {
-    if (item.type === "inline") {
+    if (item.type === "InLineDefinition") {
       return (
         <li className="list-li1" key={item.title}>
           <InLineDefinition title={item.title} meaning={item.content} />
