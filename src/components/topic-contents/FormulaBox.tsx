@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import "../../css/FormulaBox.css";
 
 interface Props {
@@ -11,13 +11,30 @@ interface Props {
 
 function FormulaBox({ title, formula, explanation, inputs, calculate }: Props) {
   const [values, setValues] = useState<Record<string, number>>({});
-  const result = calculate(values);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleInputChange = useCallback((key: string, value: string) => {
+    const num = parseFloat(value);
+    if (isNaN(num) && value !== "") {
+      setError(`Invalid input for ${key}`);
+      return;
+    }
+    setError(null);
+    setValues((prev) => ({ ...prev, [key]: num || 0 }));
+  }, []);
+
+  const result = error ? NaN : calculate(values);
 
   return (
-    <div className="formula-box">
-      <h2 className="formula-title">{title}</h2>
+    <div
+      className="formula-box"
+      role="region"
+      aria-labelledby={`formula-${title}`}
+    >
+      <h2 className="formula-title" id={`formula-${title}`}>
+        {title}
+      </h2>
       <p className="formula-expression">{formula}</p>
-
       <div className="formula-inputs">
         {inputs.map(({ label, key }) => (
           <div key={key} className="formula-input-group">
@@ -26,18 +43,21 @@ function FormulaBox({ title, formula, explanation, inputs, calculate }: Props) {
               id={key}
               type="number"
               value={values[key] ?? ""}
-              onChange={(e) =>
-                setValues({ ...values, [key]: parseFloat(e.target.value) || 0 })
-              }
+              onChange={(e) => handleInputChange(key, e.target.value)}
+              aria-invalid={!!error}
+              aria-describedby={error ? `error-${key}` : undefined}
             />
+            {error && error.includes(key) && (
+              <p id={`error-${key}`} className="formula-error">
+                {error}
+              </p>
+            )}
           </div>
         ))}
       </div>
-
       <p className="formula-result">
         <strong>Result:</strong> {isNaN(result) ? "—" : result.toFixed(2)}
       </p>
-
       {explanation && <p className="formula-explanation">{explanation}</p>}
     </div>
   );

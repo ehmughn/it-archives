@@ -7,8 +7,14 @@ interface Props {
 
 function Definition({ title, meaning }: Props) {
   return (
-    <div className="definition-card">
-      <h1 className="definition-h1">{title}</h1>
+    <div
+      className="definition-card"
+      role="region"
+      aria-labelledby={`definition-${title}`}
+    >
+      <h2 className="definition-h1" id={`definition-${title}`}>
+        {title}
+      </h2>
       <p className="definition-p">{meaning}</p>
     </div>
   );

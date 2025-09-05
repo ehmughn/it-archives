@@ -1,5 +1,5 @@
+import { useState, useEffect, useCallback, useMemo } from "react";
 import "../css/Course.css";
-import React, { useState, useEffect } from "react";
 import type {
   CourseInformation,
   Content,
@@ -9,7 +9,6 @@ import type {
 import CoursesList from "../data/CoursesInformation";
 import CourseStart from "../components/CourseStart";
 import LessonNumber from "../components/buttons/LessonNumber";
-
 import Definition from "../components/topic-contents/Definition";
 import List from "../components/topic-contents/List";
 import FormulaBox from "../components/topic-contents/FormulaBox";
@@ -19,48 +18,89 @@ interface Props {
   toHome: () => void;
 }
 
-function Courses(props: Props) {
+function Courses({ page, toHome }: Props) {
   const [course, setCourse] = useState<CourseInformation | null>(null);
-  const [lessonCount, setLessonCount] = useState(["All"]);
-  const [lessonNumber, setLessonNumber] = useState("All");
+  const [lessonCount, setLessonCount] = useState<string[]>(["All"]);
+  const [lessonNumber, setLessonNumber] = useState<string>("All");
+  const [isLoading, setIsLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState("");
 
-  const lessonNumberButtonsClicked = (data: string) => {
+  const lessonNumberButtonsClicked = useCallback((data: string) => {
     setLessonNumber(data);
-  };
+  }, []);
 
   useEffect(() => {
-    const matched = CoursesList.find((c) => c.code === props.page);
+    setIsLoading(true);
+    const matched = CoursesList.find((c) => c.code === page);
     if (matched) {
       setCourse(matched);
-      setLessonCount(() => {
-        const numberedLessons = matched.lessons.map((_, index) =>
-          String(index + 1)
-        );
-        return ["All", ...numberedLessons];
-      });
+      setLessonCount([
+        "All",
+        ...matched.lessons.map((_, index) => String(index + 1)),
+      ]);
+    } else {
+      setCourse(null);
     }
-  }, [props.page]);
+    setIsLoading(false);
+  }, [page]);
 
-  const renderDefinition = (content: Content) => {
-    return (
-      <Definition
-        title={content.title}
-        meaning={typeof content.content === "string" ? content.content : ""}
-      />
-    );
+  const searchContent = (content: Content): boolean => {
+    const searchText = searchTerm.toLowerCase();
+    switch (content.type) {
+      case "Definition":
+        const meaning =
+          typeof content.content === "string" ? content.content : "";
+        return (
+          content.title.toLowerCase().includes(searchText) ||
+          meaning.toLowerCase().includes(searchText)
+        );
+      case "List":
+        const listContent = content.content as SubList[];
+        return (
+          content.title.toLowerCase().includes(searchText) ||
+          listContent.some(
+            (item) =>
+              item.title.toLowerCase().includes(searchText) ||
+              item.content.toLowerCase().includes(searchText)
+          )
+        );
+      case "Formula":
+        const formulaContent = content.content as Formula;
+        return (
+          content.title.toLowerCase().includes(searchText) ||
+          formulaContent.formula.toLowerCase().includes(searchText) ||
+          formulaContent.explanation?.toLowerCase().includes(searchText) ||
+          false ||
+          formulaContent.inputs.some((input) =>
+            input.label.toLowerCase().includes(searchText)
+          )
+        );
+      default:
+        return false;
+    }
   };
 
-  const renderList = (content: Content) => {
-    return (
-      <List title={content.title} content={content.content as SubList[]} />
-    );
-  };
+  const renderDefinition = (content: Content) => (
+    <Definition
+      key={`${content.title}-${content.type}`}
+      title={content.title}
+      meaning={typeof content.content === "string" ? content.content : ""}
+    />
+  );
+
+  const renderList = (content: Content) => (
+    <List
+      key={`${content.title}-${content.type}`}
+      title={content.title}
+      content={content.content as SubList[]}
+    />
+  );
 
   const renderFormulaBox = (content: Content) => {
     const formulaContent = content.content as Formula;
-
     return (
       <FormulaBox
+        key={`${content.title}-${content.type}`}
         title={content.title}
         formula={formulaContent.formula}
         explanation={formulaContent.explanation}
@@ -70,80 +110,82 @@ function Courses(props: Props) {
     );
   };
 
-  const renderAll = () => {
-    return lessonCount.slice(1).map((_, index) => render(index + 1));
-  };
-
-  const render = (numberedLessonNumber: number) => {
-    return (
-      <>
-        <h1 className="lesson-title">
-          Lesson {numberedLessonNumber}:{" "}
-          {course?.lessons[numberedLessonNumber - 1].title}
-        </h1>
-        {course?.lessons[numberedLessonNumber - 1].content.map(
-          (content: Content, index: number) => {
-            switch (content.type) {
-              case "Definition":
-                return (
-                  <React.Fragment key={index}>
-                    {renderDefinition(content)}
-                  </React.Fragment>
-                );
-              case "List":
-                return (
-                  <React.Fragment key={index}>
-                    {renderList(content)}
-                  </React.Fragment>
-                );
-              case "Formula":
-                return (
-                  <React.Fragment key={index}>
-                    {renderFormulaBox(content)}
-                  </React.Fragment>
-                );
-              default:
-                return null;
-            }
-          }
-        )}
-      </>
-    );
-  };
-
-  const renderContent = () => {
-    switch (lessonNumber) {
-      case "All":
-        return renderAll();
+  const renderContentItem = (content: Content) => {
+    if (!searchContent(content)) return null;
+    switch (content.type) {
+      case "Definition":
+        return renderDefinition(content);
+      case "List":
+        return renderList(content);
+      case "Formula":
+        return renderFormulaBox(content);
       default:
-        return render(Number(lessonNumber));
+        return null;
     }
   };
+
+  const renderContent = useMemo(() => {
+    if (!course) return <p className="error-message">Course not found.</p>;
+    const relevantLessons =
+      lessonNumber === "All"
+        ? course.lessons
+        : [course.lessons[parseInt(lessonNumber) - 1]];
+    const allContent = relevantLessons.flatMap((lesson) =>
+      lesson.content.map((content) => content)
+    );
+    const filteredContent = allContent
+      .map((content) => renderContentItem(content))
+      .filter((item) => item !== null);
+
+    if (filteredContent.length === 0 && searchTerm) {
+      return (
+        <p className="error-message">No content found for "{searchTerm}".</p>
+      );
+    }
+    return filteredContent;
+  }, [course, lessonNumber, searchTerm]);
+
+  if (isLoading) {
+    return <div className="loading">Loading course...</div>;
+  }
 
   return (
     <div className="container">
       {course ? (
         <>
-          <CourseStart title={course.name} toHome={props.toHome} />
+          <CourseStart title={course.name} toHome={toHome} />
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="Search content..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="search-input"
+              aria-label="Search content within lessons"
+            />
+          </div>
           <div className="lesson-buttons">
             {lessonCount.map((num) => (
               <LessonNumber
                 key={num}
                 number={num}
+                isActive={num === lessonNumber}
                 onClick={lessonNumberButtonsClicked}
               />
             ))}
           </div>
-          <h1 className="lesson-indicator">
-            {lessonNumber === "All" ? "All Lessons" : `Lesson ${lessonNumber}`}
-          </h1>
-          {renderContent()}
+          <h2 className="lesson-indicator">
+            {lessonNumber === "All"
+              ? "All Content"
+              : `Lesson ${lessonNumber} Content`}
+          </h2>
+          {renderContent}
           <p className="ending-message">
             You have reached the end of the page.
           </p>
         </>
       ) : (
-        <p>Course not found.</p>
+        <p className="error-message">Course not found.</p>
       )}
     </div>
   );

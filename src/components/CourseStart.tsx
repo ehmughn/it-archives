@@ -5,13 +5,17 @@ interface Props {
   toHome: () => void;
 }
 
-function CourseStart(props: Props) {
+function CourseStart({ title, toHome }: Props) {
   return (
     <header className="course-header">
-      <button className="back-button" onClick={props.toHome}>
+      <button
+        className="back-button"
+        onClick={toHome}
+        aria-label="Return to home page"
+      >
         ← Back to Home
       </button>
-      <h1 className="title-heading">{props.title}</h1>
+      <h1 className="title-heading">{title}</h1>
     </header>
   );
 }

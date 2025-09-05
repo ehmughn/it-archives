@@ -1,16 +1,38 @@
 .lesson-button {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(18, 24, 38, 0.95);
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.6rem 1.2rem;
-  margin: 0.5rem;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  padding: 0.75rem 1.5rem;
+  margin: 0.25rem;
   border-radius: 8px;
   font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .lesson-button:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(18, 24, 38, 0.98);
   transform: translateY(-2px);
+  color: #ffd700;
+}
+
+.lesson-button.active {
+  background: linear-gradient(145deg, #1e3a8a, #2563eb);
+  border-color: rgba(255, 215, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(0, 100, 255, 0.3);
+  color: #ffd700;
+}
+
+.lesson-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 150, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .lesson-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 }

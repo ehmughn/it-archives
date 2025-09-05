@@ -1,0 +1,111 @@
+/* Home.css */
+
+/* Page container */
+.page-container {
+  background: linear-gradient(160deg, #0b0f1a, #121826, #0b0f1a);
+  color: #eaeaea;
+  font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container (card) */
+.home-div {
+  width: 100%;
+  max-width: 900px;
+  padding: 40px;
+  text-align: center;
+  background: rgba(18, 24, 38, 0.95);
+  border-radius: 16px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+/* Heading */
+.home-h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  background: linear-gradient(90deg, #3399ff, #66ccff, #ffd700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 2px 10px rgba(0, 150, 255, 0.4);
+}
+
+/* Button grid */
+.home-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  justify-items: center;
+}
+
+/* Button styles */
+.home-button {
+  width: 100%;
+  max-width: 280px;
+  padding: 14px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(145deg, #1e3a8a, #2563eb);
+  color: #ffffff;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 100, 255, 0.3);
+  letter-spacing: 0.5px;
+}
+
+/* Hover effect */
+.home-button:hover {
+  transform: translateY(-3px) scale(1.02);
+  background: linear-gradient(145deg, #2563eb, #3b82f6);
+  box-shadow: 0 6px 16px rgba(255, 215, 0, 0.3);
+  color: #ffd700;
+}
+
+/* Active press */
+.home-button:active {
+  transform: translateY(1px) scale(0.98);
+  background: #1e40af;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.5),
+    inset -2px -2px 6px rgba(0, 150, 255, 0.2);
+}
+
+/* Focus state for accessibility */
+.home-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 150, 255, 0.5);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .home-div {
+    padding: 20px;
+  }
+
+  .home-h1 {
+    font-size: 2.2rem;
+  }
+
+  .home-button {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-button {
+    padding: 12px 16px;
+    font-size: 1rem;
+  }
+}
