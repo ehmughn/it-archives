@@ -1160,6 +1160,1240 @@ const CoursesList: CourseInformation[] = [
           },
         ],
       },
+    ],
+  },
+  {
+    name: "Systems Integration and Architecture",
+    code: "CTSYSINL",
+    lessons: [
+      {
+        title: "Introduction",
+        content: [
+          {
+            title: "Information",
+            content:
+              "a complex concept that encompasses various aspects of knowledge, meaning, organization, and relevance.",
+            type: "Definition",
+          },
+          {
+            title: "System",
+            content:
+              "set of interconnected components, elements, or parts that work together to achieve a common goal or function.",
+            type: "Definition",
+          },
+          {
+            title: "Information System (IS)",
+            content:
+              "a set of interconnected components and processes that collect, store, process, and disseminate information to support an organization's operations, management, and decision-making.",
+            type: "Definition",
+          },
+          {
+            title: "Components of an Information System",
+            content: [
+              {
+                title: "Hardware",
+                content: "computers, networks, peripherals",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Software",
+                content: "operating systems, applications, utilities",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Data",
+                content: "types, formats, storage, and retrieval",
+                type: "InLineDefinition",
+              },
+              {
+                title: "People",
+                content: "users, developers, administrators",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Procedures",
+                content: "business process, workflow",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Information Systems (IS) Types",
+            content: [
+              {
+                title: "Transaction Processing Systems (TPS)",
+                content:
+                  "Handle routine transactions, such as sales, inventory management, and payroll processing.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Management Information Systems (MIS)",
+                content:
+                  "Provide managers with relevant information to support decision-making.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Decision Support Systems (DSS)",
+                content:
+                  "Assist decision-makers in making informed decisions by analyzing data and providing recommendations.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Knowledge Management Systems (KMS)",
+                content: "Manage and share knowledge within an organization.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Enterprise Resource Planning Systems (ERP)",
+                content:
+                  "Integrate various business functions, such as finance, human resources, and supply chain management.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Customer Relationship Management Systems (CRM)",
+                content: "Manage customer interactions and relationships.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Supply Chain Management Systems (SCM)",
+                content:
+                  "Manage the flow of goods, services, and information from raw materials to end customers.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Other Systems related to IT",
+            content: [
+              {
+                title: "Internet of Things (IoT) Systems",
+                content:
+                  "These systems connect devices and sensors to collect data and automate processes.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Telephony Systems",
+                content:
+                  "These systems manage phone calls, voice messages, and other communication protocols.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Virtual Private Networks (VPNs)",
+                content:
+                  "These systems provide secure and private access to networks over the internet.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Content Management Systems (CMS)",
+                content:
+                  "These systems manage content creation, editing, and publishing for websites and other digital platforms.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Geographic Information System (GIS)",
+                content:
+                  "These systems capture, analyze, and display geospatial data.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Business Intelligence Systems",
+                content:
+                  "These systems analyze data to gain insights and make informed business decisions.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "System Integration",
+            content:
+              "the connection of data, applications, APIs, and devices across your IT organization to be more efficient, productive, and agile. It is the process by which multiple individual subsystems or sub-components are combined into one all-encompassing larger system thereby allowing the subsystems to function together.",
+            type: "Definition",
+          },
+          {
+            title: "System Architecture",
+            content:
+              "the conceptual model that defines the structure, behavior, and more views of a system. It can consist of system components and the sub-systems developed, that will work together to implement the overall system.",
+            type: "Definition",
+          },
+          {
+            title: "Types of system integration",
+            content: [
+              {
+                title: "Internal integrations",
+                content:
+                  "a company connects its internal systems to streamline specific workflows",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Customer-facing integrations:",
+                content:
+                  "a company connects its product with customers' applications to help clients get more value from their solution",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Business-to-business (B2B) integration",
+                content:
+                  "a company connects its ERP system with business partners' to streamline transactions",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Enterprise service bus (i.e., horizontal integration)",
+                content:
+                  "systems connect to a “bus”, or a bus-like infrastructure, that facilitates communication between the various systems",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Category of System Integration",
+            content: [
+              {
+                title: "Enterprise Application Integration (EAI)",
+                content:
+                  "the process of integrating different applications within a single enterprise.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Data Integration (DI)",
+                content:
+                  "the process of integrating different data sources into a single system. This can include data from databases, spreadsheets, and text files.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Application Integration",
+                content:
+                  "connects different software applications to enable them to interact and share information.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Business Process Integration",
+                content:
+                  "aligns and optimizes business processes across different systems and departments.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          //Next topic here
+        ],
+      },
+      {
+        title: "Modeling Requirements",
+        content: [
+          {
+            title: "Modeling Requirements",
+            content:
+              "The process of capturing, analyzing, and documenting what a system should do using models or diagrams.",
+            type: "Definition",
+          },
+          {
+            title: "Importance of Modeling Requirements",
+            content: [
+              {
+                title: "Ensures clear understanding between stakeholders",
+                content: "",
+                type: "",
+              },
+              { title: "Reduces project risk", content: "", type: "" },
+              {
+                title: "Serves as a blueprint for developers",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Facilitates better testing and validation",
+                content: "",
+                type: "",
+              },
+              {
+                title: "Enhances maintenance and future development",
+                content: "",
+                type: "",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Types of Requirements",
+            content: [
+              {
+                title: "Functional Requirements",
+                content:
+                  "What the system should do (e.g., login, generate report)",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Non-Functional Requirements",
+                content:
+                  "How the system should behave (e.g., performance, security)",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Business Requirements",
+                content: "Why the system is needed (business goals)",
+                type: "InLineDefinition",
+              },
+              {
+                title: "User Requirements",
+                content: "What the user expects (user stories, personas)",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Techniques for Modeling Requirements",
+            content: [
+              {
+                title: "Textual",
+                content: "Use Cases, User Stories",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Graphical",
+                content: "Data Flow Diagrams (DFD), UML, ERD",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Prototypes",
+                content: "Wireframes, Mockups",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Steps in Identifying Modeling Requirements",
+            content: [
+              {
+                title: "Requirements Gathering",
+                content: "Interviews, surveys, observation",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Analysis and Clarification",
+                content: "Identify conflicts, prioritize",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Modeling",
+                content: "Convert into use cases, diagrams",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Validation",
+                content: "Review with stakeholders",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Documentation",
+                content: "Store in SRS (Software Requirements Specification)",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+        ],
+      },
+      {
+        title: "Software Architecture",
+        content: [
+          {
+            title: "Software architecture",
+            content:
+              "refers to the high-level structures of a software system and the discipline of creating such structures and systems. It involves making decisions about the organization of a software system, the components and their relationships, the design principles guiding the system's behavior",
+            type: "Definition",
+          },
+          {
+            title: "Factor of Software Architecture",
+            content: [
+              {
+                title: "Design",
+                content:
+                  "A plan or specification for the construction of an object or system or for the implementation of an activity or process or the result of that plan or specification in the of a prototype, product or process",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Quality Attributes",
+                content:
+                  "It includes correctness, reliability, adequacy, learnability, maintainability readability, testability, efficiency, portability",
+                type: "InLineDefinition",
+              },
+              {
+                title: "IT Environment",
+                content:
+                  "An integrated collection of technology component that serves the needs of its users and owner of the resulting system",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Human Dynamic",
+                content:
+                  "A team-oriented activity involving engineers, developers, business analysts, domain experts, data/infrastructure architects, project manager etc.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Business Strategy",
+                content:
+                  "It refers to the actions and decisions that a company takes to reach its business goals and be competitive in its industry",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Software Design",
+            content:
+              "provides a design plan that describes the elements of a system, how they fit, and work together to fulfill the requirement of the system.",
+            type: "Definition",
+          },
+          {
+            title: "Software Architect",
+            content:
+              "provides a solution that the technical team can create and design for the entire application.",
+            type: "Definition",
+          },
+
+          {
+            title: "Software Architect Expertise",
+            content: [
+              {
+                title: "Design Expertise",
+                content:
+                  "Expert in  software design, including diverse methods and approaches such as object-oriented design, event-driven design, etc.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Domain Expertise",
+                content:
+                  "Expert on the system being developed and plan for software evolution.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Technology Expertise",
+                content:
+                  "Expert on available technologies that helps in the implementation of the system.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Methodological Expertise",
+                content:
+                  "Expert on software development methodologies that may be adopted during SDLC (Software Development Life Cycle).",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Common Quality Attributes",
+            content: [
+              {
+                title: "Design Qualities",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Run-time Qualities",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "System Qualities",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "User Qualities",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Architecture Quality",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Non-runtime Quality",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Business quality attributes",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Design Qualities",
+            content: [
+              {
+                title: "Conceptual Integrity",
+                content:
+                  "Defines the consistency and coherence of the overall design. This includes the way components or modules are designed.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Maintainability",
+                content:
+                  "Ability of the system to undergo changes with a degree of ease.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Reusability",
+                content:
+                  "Defines the capability for components and subsystems to be suitable for use in other applications.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Run-time Qualities",
+            content: [
+              {
+                title: "Interoperability",
+                content:
+                  "Ability of a system or different systems to operate successfully by communicating and exchanging information with other external systems written and run by external parties.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Manageability",
+                content:
+                  "Defines how easy it is for system administrators to manage the application.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Reliability",
+                content: "Ability of a system to remain operational over time.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Scalability",
+                content:
+                  "Ability of a system to either handle the load increase without impacting the performance of the system or the ability to be readily enlarged.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Security",
+                content:
+                  "Capability of a system to prevent malicious or accidental actions outside of the designed usages.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Performance",
+                content:
+                  "Indication of the responsiveness of a system to execute any action within a given time interval.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Availability",
+                content:
+                  "Defines the proportion of time that the system is functional and working. It can be measured as a percentage of the total system downtime over a predefined period.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "System Qualities",
+            content: [
+              {
+                title: "Supportability",
+                content:
+                  "Ability of the system to provide information helpful for identifying and resolving issues when it fails to work correctly.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Testability",
+                content:
+                  "Measure of how easy it is to create test criteria for the system and its components.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "User Qualities",
+            content: [
+              {
+                title: "Usability",
+                content:
+                  "Defines how well the application meets the requirements of the user and consumer by being intuitive.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Architecture Quality",
+            content: [
+              {
+                title: "Correctness",
+                content:
+                  "Accountability for satisfying all the requirements of the system.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Non-runtime Quality",
+            content: [
+              {
+                title: "Portability",
+                content:
+                  "Ability of the system to run under different computing environment.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Integrality",
+                content:
+                  "Ability to make separately developed components of the system work correctly together.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Modifiability",
+                content:
+                  "Ease with which each software system can accommodate changes to its software.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Business quality attributes",
+            content: [
+              {
+                title: "Cost and schedule",
+                content:
+                  "Cost of the system with respect to time to market, expected project lifetime & utilization of legacy.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Marketability",
+                content: "Use of system with respect to market competition.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Architectural Style",
+            content:
+              "also called as architectural pattern, is a set of principles which shapes an application. It defines an abstract framework for a family of system in terms of the pattern of structural organization",
+            type: "Definition",
+          },
+          {
+            title: "Common Architectural Design",
+            content: [
+              {
+                title: "Communication",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Deployment",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              { title: "Domain", content: "dontMatter", type: "dontMatter" },
+              { title: "Structure", content: "dontMatter", type: "dontMatter" },
+            ],
+            type: "List",
+          },
+          {
+            title: "Communication",
+            content: [
+              {
+                title: "Message bus",
+                content:
+                  "Prescribes use of a software system that can receive and send messages using one or more communication channels.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Service-Oriented Architecture (SOA)",
+                content:
+                  "Defines the applications that expose and consume functionality as a service using contracts and messages.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: " Deployment",
+            content: [
+              {
+                title: "Client/server",
+                content:
+                  "Separate the system into two applications, where the client makes requests to the server.",
+                type: "InLineDefinition",
+              },
+              {
+                title: " 3-tier or N-tier",
+                content:
+                  "Separates the functionality into separate segments with each segment being a tier located on a physically separate computer.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Domain",
+            content: [
+              {
+                title: "Domain Driven Design",
+                content:
+                  "Focused on modeling a business domain and defining business objects based on entities within the business domain.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Structure",
+            content: [
+              {
+                title: "Component Based",
+                content:
+                  "Breakdown the application design into reusable functional or logical components that expose well-defined communication interfaces.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Layered",
+                content:
+                  "Divide the concerns of the application into stacked groups (layers).",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Object oriented",
+                content:
+                  "Based on the division of responsibilities of an application or system into objects, each containing the data and the behavior relevant to the object.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Types of Architecture",
+            content: [
+              {
+                title: "Business architecture",
+                content:
+                  "Defines the strategy of business, governance, organization, and key business processes within an enterprise and focuses on the analysis and design of business processes.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Application (software) architecture",
+                content:
+                  "Serves as the blueprint for individual application systems, their interactions, and their relationships to the business processes of the organization.",
+                type: "InLineDefinition",
+              },
+              {
+                title: " Information architecture",
+                content:
+                  "Defines the logical and physical data assets and data management resources.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Information technology (IT) architecture",
+                content:
+                  "Defines the hardware and software building blocks that make up the overall information system of the organization.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+        ],
+      },
+      {
+        title: "Systems Integration Technologies",
+        content: [
+          {
+            title: "Importance in Business Operations",
+            content: [
+              {
+                title: "Efficiency",
+                content:
+                  "Systems integration streamlines processes by connecting various systems, reducing the need for manual intervention and data duplication.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Improved Data Accuracy",
+                content:
+                  "By integrating systems, data consistency and accuracy are enhanced as information flows seamlessly between systems.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Enhanced Decision Making",
+                content:
+                  "Integrated systems provide a holistic view of the organization, enabling better-informed decision-making.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Cost Savings",
+                content:
+                  "Eliminating redundant systems and processes can result in cost savings and increased productivity.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Competitive Advantage",
+                content:
+                  "Organizations with well-integrated systems are often more agile, responsive, and better positioned to adapt to changing market conditions.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Data Integration Architecture",
+            content: [
+              {
+                title: "Source",
+                content: "where the data originates",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Lake",
+                content: "stores raw, unprocessed data.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Warehouse",
+                content: "organizes and processes data for analysis.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Mart",
+                content: "subject-specific or team-specific datasets",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Types of Systems Integration",
+            content: [
+              {
+                title: "Data Integration",
+                content:
+                  "involves combining data from different sources and formats to provide a unified view.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Application Integration",
+                content:
+                  "focuses on connecting different software applications and systems to enable seamless data flow and functionality.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Process Integration",
+                content:
+                  "involves linking together various business processes and workflows to create a cohesive and streamlined operational environment.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Enterprise Service Bus (ESB)",
+                content:
+                  "a software architecture model used for integrating different applications by establishing communication between them.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Future Trends in Systems Integration",
+            content: [
+              {
+                title: "AI and Machine Learning Integration",
+                content: "abc",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Cloud-Based Integration",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "IoT Integration",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Blockchain Integration",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+            ],
+            type: "List",
+          },
+        ],
+      },
+      {
+        title: "Architecture Models",
+        content: [
+          {
+            title: "Ways to define Software Architecture",
+            content: [
+              {
+                title: "UML (Unified Modeling Language)",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Architecture View Mode (4+1 view model)",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "ADL (Architecture Description Language)",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Unified Modeling Language (UML)",
+            content:
+              "standardized modeling language used in software engineering for visualizing, specifying, constructing, and documenting the artifacts of software systems. It is a general-purpose modeling language that provides a standard way to visualize the design of a system.",
+            type: "Definition",
+          },
+          {
+            title: "UML diagrams can be categorized into two main types",
+            content: [
+              {
+                title: "structural diagrams",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "behavioral diagrams",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Structural Diagrams",
+            content:
+              "used to depict the static structure of a system. They represent the components that make up a system and the relationships between these components.",
+            type: "Definition",
+          },
+          {
+            title: "Common Types of Structural Diagrams",
+            content: [
+              {
+                title: "Class Diagram",
+                content:
+                  "Represents the structure of a system by showing the classes of the system, their attributes, methods, and relationships between the classes.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Object Diagram",
+                content:
+                  "Shows a snapshot of the instances of classes in a system at a specific point in time, along with their relationships.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Component Diagram",
+                content:
+                  "Illustrates the components of a system and their dependencies. It shows how the physical components are wired together.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Composite Structure Diagram",
+                content:
+                  "Describes the internal structure of a class and how its parts are interconnected, including the collaboration between part.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Package Diagram",
+                content:
+                  "Organizes the elements of a system into related groups (packages) to show the dependencies between different packages.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Profile Diagram",
+                content:
+                  "Defines custom stereotypes, tagged values, and constraints for UML elements, allowing for extension and customization of UML.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Deployment Diagram",
+                content:
+                  "Models the physical deployment of artifacts on nodes (hardware) in a distributed system, showing how software and hardware components are connected.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Behavioral Diagrams",
+            content:
+              "used to capture the dynamic aspects of a system. They illustrate how the components of a system interact with each other and how the system's behavior changes over time.",
+            type: "Definition",
+          },
+          {
+            title: "Behavioral Diagrams",
+            content: [
+              {
+                title: "Use Case Diagram",
+                content:
+                  "Describes the interactions between the system and its users (actors) to represent the functional requirements of the system.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Activity Diagram",
+                content:
+                  "Represents the flow of control within a system, showing the sequence of activities or actions that need to be performed.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "State Machine Diagram",
+                content:
+                  "Models the behavior of an object or system in different states and transitions between these states based on events.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Sequence Diagram",
+                content:
+                  "Illustrates how objects interact in a particular sequence, showing the messages exchanged between objects over time.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Communication Diagram",
+                content:
+                  "Similar to a sequence diagram but focuses on the interactions between objects to achieve a specific collaboration.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Interaction Overview Diagram",
+                content:
+                  "Provides an overview of the flow of control between interactions, combining sequence and activity diagrams.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Timing Diagram",
+                content:
+                  "Shows how objects collaborate over time, focusing on the timing constraints between messages.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Architecture View Mode (4+1 view model)",
+            content:
+              "a software architecture description method based on the use of multiple, concurrent views. It was proposed by Philippe Kruchten to describe the architecture of software-intensive systems. This model provides different perspectives on the system, each catering to the needs of different stakeholders involved in the software development process.",
+            type: "Definition",
+          },
+          {
+            title: "Architecture View Mode (4+1 view model)",
+            content: [
+              {
+                title: "Logical View",
+                content:
+                  "focuses on the functionality that the system provides to end-users. It describes the high-level design of the system in terms of components, modules, and their interactions.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Development View",
+                content:
+                  "concerned with the software development process. It describes the software modules, components, and their relationships from a developer's perspective.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Process View",
+                content:
+                  "focuses on the dynamic aspects of the system, describing the system's runtime behavior. It includes information about concurrency, distribution, performance, and scalability.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Physical View",
+                content:
+                  "describes the mapping of software components onto the hardware infrastructure. It includes details about the deployment of software components on physical nodes.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Scenarios (or Use Cases)",
+                content:
+                  "the set of scenarios or use cases that describe sequences of interactions between users and the system. These scenarios provide concrete examples of how the system functions in different situations.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "ADL (Architecture Description Language)",
+            content:
+              "a specialized language used to formally describe the architecture of a software-intensive system.",
+            type: "Definition",
+          },
+          {
+            title:
+              "Key features and purposes of Architecture Description Languages",
+            content: [
+              {
+                title: "Formalism",
+                content:
+                  "provide a formal structure for describing the architecture of a system, enabling precise and unambiguous representations.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Abstraction",
+                content:
+                  "allow architects to abstract away from implementation details and focus on the high-level structure and behavior of the system.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Analysis",
+                content:
+                  "support analysis activities such as performance evaluation, reliability assessment, and other architectural quality attributes.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Tool Support",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Standardization",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Data Flow Architecture",
+            content:
+              "a design pattern used in software engineering to describe the flow of data within a system.",
+            type: "Definition",
+          },
+          {
+            title: "3 types of execution sequences",
+            content: [
+              {
+                title: "Batch sequential",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Pipe and filter or non - sequential pipeline mode",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+              {
+                title: "Process control",
+                content: "dontMatter",
+                type: "dontMatter",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Batch sequential",
+            content:
+              "a classical data processing model, in which a data transformation subsystems can initiate process only after its previous subsystems completely through",
+            type: "Definition",
+          },
+          {
+            title: "The Pipe and Filter architecture",
+            content:
+              "a design pattern used in software engineering to process data sequentially through a series of processing steps or filters. Each filter performs a specific operation on the data and passes the result to the next filter through a communication channel called a pipe.",
+            type: "Definition",
+          },
+          {
+            title: "The Pipe and Filter architecture",
+            content: [
+              {
+                title: "Filters",
+                content: "components responsible for processing data.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Pipes",
+                content: "serve as communication channels between filters.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Key components of the Pipe and Filter architecture",
+            content: [
+              {
+                title: "Data Flow",
+                content:
+                  "flows through the system from one filter to another via pipes.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Modularity and Reusability",
+                content:
+                  "promotes modularity by breaking down processing tasks into smaller, independent filters.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Scalability",
+                content:
+                  "The modular nature of the Pipe and Filter architecture makes it scalable.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Process Control Architecture",
+            content:
+              "typically refers to the design and structure of systems that manage and control industrial processes.",
+            type: "Definition",
+          },
+          {
+            title: "Component-based architecture",
+            content:
+              "a design paradigm in software engineering where complex systems are decomposed into smaller, reusable pieces called components.",
+            type: "Definition",
+          },
+          {
+            title: "Component",
+            content:
+              "modular, portable, replaceable, and reusables set of well-defined functionality that encapsulates its implementation and exporting its as a higher-level interface.",
+            type: "Definition",
+          },
+          {
+            title: "Views of a Component",
+            content: [
+              {
+                title: "Object-Oriented View",
+                content:
+                  "a component is seen as a set of one or more cooperating classes.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Conventional View",
+                content:
+                  "considers a component as a functional element or module of a program.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Process-Related View",
+                content:
+                  "the focus is on building the system from existing components maintained in a library, rather than creating each component from scratch.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          //Next topic here
+        ],
+      },
       //Next lesson here
     ],
   },
