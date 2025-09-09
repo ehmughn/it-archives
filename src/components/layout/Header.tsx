@@ -17,7 +17,6 @@ function Header({ page, goToHome, setPage, courses }: HeaderProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchActive, setIsSearchActive] = useState(false);
 
-  // Filter courses based on search query
   const filteredCourses = useMemo(() => {
     if (!searchQuery) return [];
     return courses.filter((course) =>
@@ -27,8 +26,8 @@ function Header({ page, goToHome, setPage, courses }: HeaderProps) {
 
   const handleSearchSelect = (courseCode: string) => {
     setPage(courseCode);
-    setSearchQuery(""); // Clear search after selection
-    setIsSearchActive(false); // Hide dropdown
+    setSearchQuery("");
+    setIsSearchActive(false);
   };
 
   return (
@@ -45,7 +44,7 @@ function Header({ page, goToHome, setPage, courses }: HeaderProps) {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => setIsSearchActive(true)}
-                onBlur={() => setTimeout(() => setIsSearchActive(false), 200)} // Delay to allow click
+                onBlur={() => setTimeout(() => setIsSearchActive(false), 200)}
                 aria-label="Search for courses by name"
               />
               {isSearchActive && searchQuery && filteredCourses.length > 0 && (
@@ -54,7 +53,7 @@ function Header({ page, goToHome, setPage, courses }: HeaderProps) {
                     <li
                       key={course.code}
                       className="search-dropdown-item"
-                      onMouseDown={() => handleSearchSelect(course.code)} // Use onMouseDown to handle before blur
+                      onMouseDown={() => handleSearchSelect(course.code)}
                       role="option"
                       aria-selected={page === course.code}
                     >

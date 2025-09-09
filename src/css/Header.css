@@ -1,6 +1,3 @@
-/* Header.css (Updated) */
-
-/* Existing styles remain unchanged, adding search-specific styles */
 .header {
   background: rgba(18, 24, 38, 0.95);
   border-bottom: 1px solid rgba(255, 215, 0, 0.2);
@@ -65,7 +62,6 @@
   box-shadow: 0 0 0 3px rgba(0, 150, 255, 0.5);
 }
 
-/* Search bar styles */
 .header-search-container {
   position: relative;
 }
@@ -93,7 +89,6 @@
   box-shadow: 0 0 0 3px rgba(0, 150, 255, 0.5);
 }
 
-/* Search dropdown */
 .search-dropdown {
   position: absolute;
   top: 100%;

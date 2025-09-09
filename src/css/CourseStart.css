@@ -45,7 +45,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
-  /* Fallback for browsers that don't support background-clip: text */
   color: #ffd700;
 }
 

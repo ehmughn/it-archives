@@ -40,7 +40,6 @@ function Home() {
     }));
   }, []);
 
-  // Filter courses based on search query (for the home page)
   const filteredCourses = useMemo(() => {
     return courseList.filter((course) =>
       course.name.toLowerCase().includes(searchQuery.toLowerCase())
