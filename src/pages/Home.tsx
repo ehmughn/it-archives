@@ -99,7 +99,7 @@ function Home() {
         ) : page === "About" ? (
           <About />
         ) : page === "Contact" ? (
-          <Contact toHome={goToHome} />
+          <Contact />
         ) : (
           <Courses page={page} toHome={goToHome} />
         )}
