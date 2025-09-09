@@ -11,9 +11,18 @@ interface HeaderProps {
   goToHome: () => void;
   setPage: (page: string) => void;
   courses: Course[];
+  goToAbout: () => void;
+  goToContact: () => void;
 }
 
-function Header({ page, goToHome, setPage, courses }: HeaderProps) {
+function Header({
+  page,
+  goToHome,
+  goToAbout,
+  goToContact,
+  setPage,
+  courses,
+}: HeaderProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [isSearchActive, setIsSearchActive] = useState(false);
 
@@ -77,10 +86,22 @@ function Header({ page, goToHome, setPage, courses }: HeaderProps) {
             >
               Home
             </button>
-            <button className="nav-button" aria-label="About IT Archives">
+            <button
+              className={`nav-button ${
+                page === "About" ? "nav-button-active" : ""
+              }`}
+              onClick={goToAbout}
+              aria-current={page === "About" ? "page" : undefined}
+            >
               About
             </button>
-            <button className="nav-button" aria-label="Contact Us">
+            <button
+              className={`nav-button ${
+                page === "Contact" ? "nav-button-active" : ""
+              }`}
+              onClick={goToContact}
+              aria-current={page === "Contact" ? "page" : undefined}
+            >
               Contact
             </button>
           </nav>
