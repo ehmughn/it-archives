@@ -1,0 +1,98 @@
+{
+  "Course Template": {
+    "prefix": "course-template",
+    "body": [
+      "{",
+      "  name: \"Course Name\",",
+      "  code: \"CourseCode\",",
+      "  lessons: [",
+      "//Lessons goes here",
+      "  ]",
+      "}",
+      "//Next Course Here"
+    ],
+    "description": "Template for creating a course with lessons, definition, lists, and formula."
+  },
+
+  "Definition Content": {
+    "prefix": "content-definition",
+    "body": [
+      "{",
+      "  title: \"(Sample for Definition)\",",
+      "  content: \"DefinitionMeaning\",",
+      "  type: \"Definition\"",
+      "}",
+      "//Next topic here"
+    ],
+    "description": "Insert a Definition content block"
+  },
+
+  "Inline List Content": {
+    "prefix": "content-inline-list",
+    "body": [
+      "{",
+      "  title: \"(Sample for InLine List)\",",
+      "  content: [",
+      "    { title: \"aaa\", content: \"abc\", type: \"InLineDefinition\" },",
+      "    { title: \"bbb\", content: \"abc\", type: \"InLineDefinition\" },",
+      "    { title: \"ccc\", content: \"abc\", type: \"InLineDefinition\" }",
+      "  ],",
+      "  type: \"List\"",
+      "}",
+      "//Next topic here"
+    ],
+    "description": "Insert an Inline List content block"
+  },
+
+  "List Content": {
+    "prefix": "content-list",
+    "body": [
+      "{",
+      "  title: \"(Sample for Not InLine List)\",",
+      "  content: [",
+      "    { title: \"aaa\", content: \"dontMatter\", type: \"dontMatter\" },",
+      "    { title: \"bbb\", content: \"dontMatter\", type: \"dontMatter\" },",
+      "    { title: \"ccc\", content: \"dontMatter\", type: \"dontMatter\" }",
+      "  ],",
+      "  type: \"List\"",
+      "}",
+      "//Next topic here"
+    ],
+    "description": "Insert a List content block"
+  },
+
+  "Formula Content": {
+    "prefix": "content-formula",
+    "body": [
+      "{",
+      "  title: \"(Sample for Formula)\",",
+      "  content: {",
+      "    formula: \"A = B + C\",",
+      "    explanation: \"explanation\",",
+      "    inputs: [",
+      "      { label: \"Sample B\", key: \"b\" },",
+      "      { label: \"Sample C\", key: \"c\" }",
+      "    ],",
+      "    calculate: ({ b = 0, c = 0 }) => b - c",
+      "  },",
+      "  type: \"Formula\"",
+      "}",
+      "//Next topic here"
+    ],
+    "description": "Insert a Formula content block"
+  },
+
+  "Lesson Template": {
+    "prefix": "lesson-template",
+    "body": [
+      "{",
+      "  title: \"LessonNameGoesHereeeeeeeeeeeeeeeeeeeeeee\",",
+      "  content: [",
+      "//your content goes here",
+      "  ]",
+      "}",
+      "//Next lesson here"
+    ],
+    "description": "📘 Template for a Lesson with sample Definition, List, and Formula blocks"
+  }
+}

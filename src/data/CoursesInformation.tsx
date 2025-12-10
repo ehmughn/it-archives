@@ -1,3 +1,19 @@
+/*
+
+ADDING STUFF HERE SHORTCUTS USING VSCODE
+
+WHAT TO TYPE - WHAT IT DOES
+
+course-template - start of a new course
+lesson-template - start of a new lesson, must be put inside a course
+
+content-definition - a content of a lesson, definition content
+content-inline-list - a content of a lesson, list with titles and their definition
+content-list - a content of a lesson, list with only titles (no definition)
+content-formula - a content of a lesson, formula with interactive calculator
+
+*/
+
 export interface SubList {
   title: string;
   content: string;
