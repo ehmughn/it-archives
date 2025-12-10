@@ -2,7 +2,7 @@
 
 ## Overview
 
-IT Archives is a React-based web application designed to display IT-related courses that I took.
+IT Archives is my personal archive on the courses I took. Lessons in this app does not reflect on what I learned or what you should learn.
 
 ## Deployment
 
@@ -10,7 +10,7 @@ The project is deployed here: [https://ehmughn.github.io/it-archives/](https://e
 
 ## Setup Instructions
 
-### Prerequisites
+### Pre-requisites
 
 - **Node.js**: Version 16 or higher.
 - **Git**: For cloning the repository.
@@ -30,8 +30,6 @@ The project is deployed here: [https://ehmughn.github.io/it-archives/](https://e
    npm install
    ```
 
-   (pretty sure this is incomplete, please let me know.)
-
 3. **Run the Development Server**:
 
    ```bash
@@ -42,7 +40,7 @@ The project is deployed here: [https://ehmughn.github.io/it-archives/](https://e
 
 ## Development Notes
 
-- **Course Data**: The `CoursesInformation.tsx` file contains all the courses and their corresponding data. Be careful touching any of it.
+- **Course Data**: The `CoursesInformation.tsx` file contains all the courses and their corresponding data. There are instructions given in that file, please use with caution editing that file.
 - **Dependencies**: The project only depends on `react@19.1.1` and `react-dom@19.1.1` as of making this markdown. The following must appear in `package.json`:
   ```json
   "dependencies": {
