@@ -6,11 +6,10 @@ function About() {
       <div className="about-div">
         <h2 className="about-h1">About IT Archives</h2>
         <p className="about-subtitle">
-          IT Archives is a React-based web application designed to showcase the
-          IT-related courses I completed as part of my Bachelor of Science in
-          Information Technology (BSIT) program. This project serves as a
-          personal notes to document my learning journey and share resources
-          used during my studies.
+          <strong>IT Archives</strong> is my personal reviewer designed to
+          showcase the IT-related courses I completed as part of my BSIT
+          program. This serves as my personal notes to document my learning
+          journey and share resources used during my studies.
         </p>
         <p className="about-portfolio">
           More about me:{" "}

@@ -3454,7 +3454,150 @@ const CoursesList: CourseInformation[] = [
       },
     ],
   },
+  {
+    name: "System Administration and Maintenance",
+    code: "CTSYSADL",
+    lessons: [
+      {
+        title: "Group Policy Object Management",
+        content: [
+          {
+            title: "Group Policy Objects",
+            content:
+              "a collection of Group Policy settings that define various configurations for users and computers in an Active Directory environment. These settings can include security options, software installation policies, scripts to be run, and other configurations that help manage the behavior of users and computers within a network.",
+            type: "Definition",
+          },
+          {
+            title: "How GPOs are used to manage user and computer settings",
+            content: [
+              {
+                title: "Centralized Management",
+                content:
+                  "GPOs allow administrators to centrally manage user and computer settings across the network. This centralized approach simplifies administration tasks and ensures consistency in configurations.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Security Policies",
+                content:
+                  "GPOs enable administrators to enforce security settings such as password policies, account lockout policies, firewall settings, and more. These policies help in maintaining a secure IT environment.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Software Deployment",
+                content:
+                  "GPOs can be used to deploy software applications to users or computers within the network. This feature streamlines software distribution and ensures that all necessary applications are installed on designated machines.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Configuration Settings",
+                content:
+                  "GPOs help in configuring various settings on user machines, such as desktop backgrounds, drive mappings, Start menu options, and more. By defining these settings through GPOs, administrators can ensure a consistent user experience across the network.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Restrictions and Controls",
+                content:
+                  "GPOs allow administrators to apply restrictions and controls to user and computer settings. For example, administrators can restrict access to specific applications, websites, or system resources based on user roles or organizational requirements.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Benefits of Effective GPO Management",
+            content: [
+              {
+                title: "Increased Security:",
+                content:
+                  "GPOs play a crucial role in enforcing security policies across the network. By effectively managing GPOs, administrators can implement settings like password policies, account lockout policies, firewall configurations, and more to enhance the security posture of the organization. Consistently applying security settings through GPOs helps in reducing vulnerabilities and ensuring that systems are protected against potential threats.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Consistency in Configurations",
+                content:
+                  "GPOs enable administrators to maintain consistency in configurations across user and computer settings. By defining and applying GPOs uniformly across the network, administrators can ensure that all systems adhere to the desired standards and configurations. Consistent configurations reduce the risk of configuration drift, where individual systems deviate from the desired settings, leading to potential operational issues and security vulnerabilities.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Time-Saving Through Automation",
+                content:
+                  "Effective GPO management allows for automation of repetitive tasks and administrative processes. By leveraging GPOs to deploy software, enforce policies, and configure settings across the network, administrators can save time and effort that would otherwise be spent on manual configuration tasks. Automation through GPO management not only increases operational efficiency but also reduces the likelihood of human errors that can result from manual configuration changes.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Tools for GPO Management",
+            content: [
+              {
+                title: "Group Policy Management Console (GPMC)",
+                content:
+                  "The Group Policy Management Console is a Microsoft Management Console (MMC) snap-in that provides a single interface for managing Group Policy Objects in Active Directory environments. GPMC allows administrators to create, edit, and link GPOs, as well as manage Group Policy security settings, preferences, and other configurations.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "PowerShell cmdlets for GPO Management",
+                content:
+                  "PowerShell provides a powerful command-line interface for managing GPOs in Windows environments. Administrators can use PowerShell cmdlets to automate GPO management tasks, such as creating new GPOs, applying GPO settings, and performing bulk operations. Examples of PowerShell cmdlets for GPO management include New-GPO, Get-GPO, Set GPPermission, and Invoke-GPUpdate.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          {
+            title: "Third-Party Tools for Advanced GPO Management",
+            content: [
+              {
+                title: "Netwrix Group Policy Change Reporter",
+                content:
+                  "Monitors GPO changes, alerts administrators to unauthorized modifications, and provides detailed reports on GPO activity.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "Specops Gpupdate",
+                content:
+                  "Enhances GPO management with features like remote GPO updating, reporting, and troubleshooting capabilities.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "ManageEngine Desktop Central",
+                content:
+                  "Provides GPO management along with patch management, software deployment, remote desktop sharing, and mobile device management features.",
+                type: "InLineDefinition",
+              },
+              {
+                title: "PolicyPak",
+                content:
+                  "Offers tools for managing GPOs, Group Policy Preferences, and enforcing application settings across the network.",
+                type: "InLineDefinition",
+              },
+            ],
+            type: "List",
+          },
+          //Next topic here
+        ],
+      },
+      //Next lesson here
+    ],
+  },
   //Next Course Here
 ];
+
+/*
+
+ADDING STUFF HERE SHORTCUTS USING VSCODE
+
+WHAT TO TYPE - WHAT IT DOES
+
+course-template - start of a new course
+lesson-template - start of a new lesson, must be put inside a course
+
+content-definition - a content of a lesson, definition content
+content-inline-list - a content of a lesson, list with titles and their definition
+content-list - a content of a lesson, list with only titles (no definition)
+content-formula - a content of a lesson, formula with interactive calculator
+
+*/
 
 export default CoursesList;

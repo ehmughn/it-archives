@@ -6,10 +6,10 @@ function Contact() {
       <div className="contact-div">
         <h2 className="contact-h1">Contact Me</h2>
         <p className="contact-subtitle">
-          Have questions or feedback about IT Archives? Feel free to reach out!
+          If you have any questions or feedback, feel free to reach out!
         </p>
         <p className="contact-text">
-          You can contact me directly at{" "}
+          Contact me directly at{" "}
           <a
             href="mailto:emanhatesschool1234@gmail.com"
             className="contact-link"
