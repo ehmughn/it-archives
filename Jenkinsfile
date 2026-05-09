@@ -17,31 +17,22 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the project...'
-                // Maven:  sh 'mvn clean package -DskipTests'
-                // Gradle: sh './gradlew build'
-                sh 'npm install && npm run build'
-                sh 'echo Build step — replace with your command'
+                bat 'npm install'
+                bat 'npm run build'
             }
         }
 
         stage('Test') {
             steps {
                 echo 'Running tests...'
-                // Maven:  sh 'mvn test'
-                sh 'npm test'
-                sh 'echo Test step — replace with your command'
-            }
-            post {
-                always {
-                    // junit '**/target/surefire-reports/*.xml'
-                }
+                bat 'npm test'
             }
         }
 
         stage('Archive') {
             steps {
                 echo 'Archiving build artifacts...'
-                archiveArtifacts artifacts: 'target/*.jar', allowEmptyArchive: true
+                archiveArtifacts artifacts: 'dist/**/*', allowEmptyArchive: true
             }
         }
     }
