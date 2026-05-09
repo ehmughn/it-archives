@@ -61,4 +61,4 @@ Contributions are welcome! Please follow these steps:
 
 ## Contact
 
-For questions or feedback, please contact [emanhatesschool1234@gmail.com](mailto:emanhatesschool1234@gmail.com).
+For questions or feedback, please contact [my email](mailto:emanhatesschool1234@gmail.com).
