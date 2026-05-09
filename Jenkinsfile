@@ -47,14 +47,14 @@ pipeline {
 
     post {
         success {
-            mail to: 'your-email@example.com',
-                subject: "BUILD SUCCESS: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: "Good news! Build ${env.BUILD_URL} completed successfully."
+            mail to: 'emanhatesschool1234@gmail.com',
+                subject: "BUILD SUCCESS",
+                body: "Good news! Build completed successfully."
         }
         failure {
-            mail to: 'your-email@example.com',
-                subject: "BUILD FAILED: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: "Build ${env.BUILD_URL} has failed. Please check the logs."
+            mail to: 'emanhatesschool1234@gmail.com',
+                subject: "BUILD FAILED}",
+                body: "Build has failed. Please check the logs."
         }
     }
 
