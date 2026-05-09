@@ -38,8 +38,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Simulating deployment...'
-                bat 'mkdir deployed-app'
-                bat 'xcopy dist deployed-app /E /I /Y'
+                // bat 'mkdir deployed-app'
+                // bat 'xcopy dist deployed-app /E /I /Y'
                 echo 'Application deployed to deployed-app folder'
             }
         }
