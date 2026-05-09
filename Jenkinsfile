@@ -47,15 +47,10 @@ pipeline {
 
     post {
         success {
-            mail to: 'emanhatesschool1234@gmail.com',
-                subject: "BUILD SUCCESS",
-                body: "Good news! Build completed successfully."
+            echo 'Pipeline completed successfully!'
         }
         failure {
-            mail to: 'emanhatesschool1234@gmail.com',
-                subject: "BUILD FAILED}",
-                body: "Build has failed. Please check the logs."
+            echo 'Pipeline FAILED — check the logs above.'
         }
     }
-
 }
